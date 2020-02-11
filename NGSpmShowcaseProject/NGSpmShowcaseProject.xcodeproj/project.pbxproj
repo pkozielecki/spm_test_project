@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		22ABDD9C23F29A8500749F8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22ABDD9A23F29A8500749F8A /* Main.storyboard */; };
 		22ABDD9E23F29A8900749F8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22ABDD9D23F29A8900749F8A /* Assets.xcassets */; };
 		22ABDDA123F29A8900749F8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22ABDD9F23F29A8900749F8A /* LaunchScreen.storyboard */; };
+		22ABDDAD23F29F7D00749F8A /* NGSpmShowcase in Frameworks */ = {isa = PBXBuildFile; productRef = 22ABDDAC23F29F7D00749F8A /* NGSpmShowcase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22ABDDAD23F29F7D00749F8A /* NGSpmShowcase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = NGSpmShowcaseProject;
+			packageProductDependencies = (
+				22ABDDAC23F29F7D00749F8A /* NGSpmShowcase */,
+			);
 			productName = NGSpmShowcaseProject;
 			productReference = 22ABDD9123F29A8500749F8A /* NGSpmShowcaseProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 22ABDD8823F29A8400749F8A;
+			packageReferences = (
+				22ABDDAB23F29F7D00749F8A /* XCRemoteSwiftPackageReference "spm_test" */,
+			);
 			productRefGroup = 22ABDD9223F29A8500749F8A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -336,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22ABDDAB23F29F7D00749F8A /* XCRemoteSwiftPackageReference "spm_test" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkozielecki/spm_test.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22ABDDAC23F29F7D00749F8A /* NGSpmShowcase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22ABDDAB23F29F7D00749F8A /* XCRemoteSwiftPackageReference "spm_test" */;
+			productName = NGSpmShowcase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 22ABDD8923F29A8400749F8A /* Project object */;
 }

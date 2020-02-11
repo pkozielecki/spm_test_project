@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NGSpmShowcase
 
 class ViewController: UIViewController {
     
@@ -14,7 +15,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let adoptionRate = NGSpmAdoptionRate.high
+        labelSpmAdoptionRate.text = "\(adoptionRate.rawValue)"
     }
 }
 

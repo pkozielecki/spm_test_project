@@ -13,7 +13,8 @@
 		22ABDD9C23F29A8500749F8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22ABDD9A23F29A8500749F8A /* Main.storyboard */; };
 		22ABDD9E23F29A8900749F8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22ABDD9D23F29A8900749F8A /* Assets.xcassets */; };
 		22ABDDA123F29A8900749F8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22ABDD9F23F29A8900749F8A /* LaunchScreen.storyboard */; };
-		22ABDDAD23F29F7D00749F8A /* NGSpmShowcase in Frameworks */ = {isa = PBXBuildFile; productRef = 22ABDDAC23F29F7D00749F8A /* NGSpmShowcase */; };
+		22ABDDAD23F29F7D00749F8A /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 22ABDDAC23F29F7D00749F8A /* SwiftPackageProductDependency */; };
+		9F1D432B1FC4CF6683B11E37 /* Pods_NGSpmShowcaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0C19E009779951953B7AB9 /* Pods_NGSpmShowcaseProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,9 @@
 		22ABDD9D23F29A8900749F8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22ABDDA023F29A8900749F8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22ABDDA223F29A8900749F8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23342BF93F5F574DE20FB212 /* Pods-NGSpmShowcaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGSpmShowcaseProject.debug.xcconfig"; path = "Target Support Files/Pods-NGSpmShowcaseProject/Pods-NGSpmShowcaseProject.debug.xcconfig"; sourceTree = "<group>"; };
+		71505BC645CF035AA4193094 /* Pods-NGSpmShowcaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGSpmShowcaseProject.release.xcconfig"; path = "Target Support Files/Pods-NGSpmShowcaseProject/Pods-NGSpmShowcaseProject.release.xcconfig"; sourceTree = "<group>"; };
+		AB0C19E009779951953B7AB9 /* Pods_NGSpmShowcaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NGSpmShowcaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22ABDDAD23F29F7D00749F8A /* NGSpmShowcase in Frameworks */,
+				22ABDDAD23F29F7D00749F8A /* BuildFile in Frameworks */,
+				9F1D432B1FC4CF6683B11E37 /* Pods_NGSpmShowcaseProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				22ABDD9323F29A8500749F8A /* NGSpmShowcaseProject */,
 				22ABDD9223F29A8500749F8A /* Products */,
+				540715D150B3A9B3C4825464 /* Pods */,
+				3E646B5B650B28A7008ABCE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +76,24 @@
 			path = NGSpmShowcaseProject;
 			sourceTree = "<group>";
 		};
+		3E646B5B650B28A7008ABCE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB0C19E009779951953B7AB9 /* Pods_NGSpmShowcaseProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		540715D150B3A9B3C4825464 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23342BF93F5F574DE20FB212 /* Pods-NGSpmShowcaseProject.debug.xcconfig */,
+				71505BC645CF035AA4193094 /* Pods-NGSpmShowcaseProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22ABDDA523F29A8900749F8A /* Build configuration list for PBXNativeTarget "NGSpmShowcaseProject" */;
 			buildPhases = (
+				9AC06FB068148B889E5EC4B8 /* [CP] Check Pods Manifest.lock */,
 				22ABDD8D23F29A8500749F8A /* Sources */,
 				22ABDD8E23F29A8500749F8A /* Frameworks */,
 				22ABDD8F23F29A8500749F8A /* Resources */,
+				6A5B16BCC69E2BA11A7FB415 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -86,7 +113,7 @@
 			);
 			name = NGSpmShowcaseProject;
 			packageProductDependencies = (
-				22ABDDAC23F29F7D00749F8A /* NGSpmShowcase */,
+				22ABDDAC23F29F7D00749F8A /* SwiftPackageProductDependency */,
 			);
 			productName = NGSpmShowcaseProject;
 			productReference = 22ABDD9123F29A8500749F8A /* NGSpmShowcaseProject.app */;
@@ -117,7 +144,7 @@
 			);
 			mainGroup = 22ABDD8823F29A8400749F8A;
 			packageReferences = (
-				22ABDDAB23F29F7D00749F8A /* XCRemoteSwiftPackageReference "spm_test" */,
+				22ABDDAB23F29F7D00749F8A /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 22ABDD9223F29A8500749F8A /* Products */;
 			projectDirPath = "";
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A5B16BCC69E2BA11A7FB415 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NGSpmShowcaseProject/Pods-NGSpmShowcaseProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NGSpmShowcaseProject/Pods-NGSpmShowcaseProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NGSpmShowcaseProject/Pods-NGSpmShowcaseProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AC06FB068148B889E5EC4B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NGSpmShowcaseProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		22ABDD8D23F29A8500749F8A /* Sources */ = {
@@ -290,6 +359,7 @@
 		};
 		22ABDDA623F29A8900749F8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23342BF93F5F574DE20FB212 /* Pods-NGSpmShowcaseProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +377,7 @@
 		};
 		22ABDDA723F29A8900749F8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71505BC645CF035AA4193094 /* Pods-NGSpmShowcaseProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -346,7 +417,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		22ABDDAB23F29F7D00749F8A /* XCRemoteSwiftPackageReference "spm_test" */ = {
+		22ABDDAB23F29F7D00749F8A /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pkozielecki/spm_test.git";
 			requirement = {
@@ -357,9 +428,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		22ABDDAC23F29F7D00749F8A /* NGSpmShowcase */ = {
+		22ABDDAC23F29F7D00749F8A /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 22ABDDAB23F29F7D00749F8A /* XCRemoteSwiftPackageReference "spm_test" */;
+			package = 22ABDDAB23F29F7D00749F8A /* RemoteSwiftPackageReference */;
 			productName = NGSpmShowcase;
 		};
 /* End XCSwiftPackageProductDependency section */

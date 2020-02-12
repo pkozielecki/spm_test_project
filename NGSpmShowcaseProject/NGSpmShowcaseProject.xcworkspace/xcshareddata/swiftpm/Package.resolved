@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "NGSpmShowcase",
+        "repositoryURL": "https://github.com/pkozielecki/spm_test.git",
+        "state": {
+          "branch": null,
+          "revision": "a3890f11318ae81433ee38bdeec723bc750d2fd9",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

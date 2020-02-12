@@ -8,6 +8,7 @@
 
 import UIKit
 import NGSpmShowcase
+import MBProgressHUD
 
 class ViewController: UIViewController {
     
@@ -17,6 +18,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let adoptionRate = NGSpmAdoptionRate.high
         labelSpmAdoptionRate.text = "\(adoptionRate.rawValue)"
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.0) { [weak self] in
+            guard let self = self else { return }
+            MBProgressHUD.hide(for: self.view, animated: true)
+        }
     }
 }
 
